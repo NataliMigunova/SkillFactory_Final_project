@@ -8,7 +8,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 @pytest.fixture(autouse=True)
 def testing():
    pytest.driver = webdriver.Chrome('./chromedriver')
-   # Переходим на страницу авторизации
    pytest.driver.get('https://royalfashion.com.ua/')
 
    yield

@@ -7,7 +7,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 @pytest.fixture(autouse=True)
 def testing():
    pytest.driver = webdriver.Chrome('./chromedriver')
-   # Переходим на страницу авторизации
    pytest.driver.get('https://royalfashion.com.ua/')
 
    yield
@@ -48,10 +47,13 @@ def test_items_sorting_by_date_low_high():
     switch_sorting_in_dropbox('за датою за зростанням')
     check_sorting_in_dropbox_is('за датою за зростанням')
 
+
 def test_items_sorting_by_date_high_low():
     search_page_for_shorts()
     switch_sorting_in_dropbox('за датою за спаданням')
     check_sorting_in_dropbox_is('за датою за спаданням')
+
+    # ------------------------------------------------------------------
 
 
 
@@ -117,7 +119,6 @@ def switch_sorting_in_dropbox(sorting_type):
     link_for_items = get_link_for_items_on_the_screen_by_value(sorting_type)
     link_for_items.click()
 
-    # pytest.driver.find_elements_by_xpath('//*[@id="paging_setting_top"]/form[1]/div[2]/div[1]/ul[1]/li[2]/a[1]')
 
 def get_link_for_items_on_the_screen_by_value(sorting_type):
     all_links = pytest.driver.find_elements_by_css_selector('li a')

@@ -9,7 +9,6 @@ number_of_elements_on_the_screen = {'#90', '#180', '#270', '#300'}
 @pytest.fixture(autouse=True)
 def testing():
    pytest.driver = webdriver.Chrome('./chromedriver')
-   # Переходим на страницу авторизации
    pytest.driver.get('https://royalfashion.com.ua/')
 
    yield
@@ -39,6 +38,8 @@ def test_check_deafult_number_of_items_on_the_screen_is_300():
     switch_number_in_dropbox(300)
     assert_number_in_dropbox(300)
     assert_number_of_items_on_the_screen(300)
+
+# ------------------------------------------------------------------
 
 def switch_number_in_dropbox(number_to_select):
     item_number_dropdown = WebDriverWait(pytest.driver, 10).until(presence_of_element_located((By.XPATH, '//*[@id="s_setting_1"]')))

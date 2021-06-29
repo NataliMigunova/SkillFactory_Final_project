@@ -7,7 +7,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 @pytest.fixture(autouse=True)
 def testing():
    pytest.driver = webdriver.Chrome('./chromedriver')
-   # Переходим на страницу авторизации
    pytest.driver.get('https://royalfashion.com.ua/')
 
    yield
@@ -72,7 +71,7 @@ def test_should_filter_shorts_by_color_yellow():
 def test_should_filter_shorts_by_color_black():
    run_test_for_color_filter('//*[@id="filter_traits62_val270"]', '//*[@id="filter_traits62_val270_quantity"]/span[1]')
 
-# _____________________________________________________________________
+# ------------------------------------------------------------------
 
 def run_test_for_size_by (xpath_size_selector, xpath_item_number):
    search_page_for_shorts()
