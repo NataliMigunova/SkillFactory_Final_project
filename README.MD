@@ -8,7 +8,7 @@ Test suite for testing login/logout functionality for previously registered user
 - [Logout](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_login_logout_functionality.py#L37)
   tests logout functionality for logged in customer
   
-##[Website tabs functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_tabs_verification.py)
+## [Website tabs functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_tabs_verification.py)
 Test suite which checks presence of all main menu tabs on the screen
 
 - [Bestseller tab](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_tabs_verification.py#L17)
@@ -31,7 +31,7 @@ Test suite which checks presence of all main menu tabs on the screen
   tests that tab Last Things opens and all related items are shown on the screen
   
 
-##[Item Page functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_item_page_information.py)
+## [Item Page functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_item_page_information.py)
 Test suite which tests item info page has all expected components on it
 
 - [Breadcrumbs test](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_item_page_information.py#L18)
@@ -64,7 +64,7 @@ Test suite which tests item info page has all expected components on it
   tests that Ask question block is present on the screen
   
 
-##[Search item and Filter functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_search_and_filter_functionality.py)
+## [Search item and Filter functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_search_and_filter_functionality.py)
 Test suite to test search functionality and filtering the objects
 - [Search for proper item](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/test_search_and_filter_functionality.py#L16)
   tests that system can find items which are correctly represent any of the group of the items on the website
@@ -94,7 +94,7 @@ Test suite to test search functionality and filtering the objects
   tests that Black color items are sorted after filter apply
   
 
-##[Number of items on the screen switch functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_Number_Of_Items_on_the_screen.py)
+## [Number of items on the screen switch functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_Number_Of_Items_on_the_screen.py)
 Test suite which changes number of shown items on the screen
 - [Number of items on the screen is 90](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_Number_Of_Items_on_the_screen.py#L19)
   tests that default number of elements is 90
@@ -106,7 +106,7 @@ Test suite which changes number of shown items on the screen
   switches to 300 items on the screen using select box
   
 
-##[Sorting items on the screen functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_Sorting_Of_Items_on_the_screen.py)
+## [Sorting items on the screen functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_Sorting_Of_Items_on_the_screen.py)
 Test suite switches and tests sorting modes of items represented on the screen
 - [Sorting alphabetical A-Z order](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_Sorting_Of_Items_on_the_screen.py)
   tests that items on the screen get sorted in alphabetical A-Z order
@@ -122,7 +122,7 @@ Test suite switches and tests sorting modes of items represented on the screen
   tests that items on the screen get sorted by date from high to low
   
 
-##[Cart functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_cart_functionality.py)
+## [Cart functionality](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_cart_functionality.py)
 Test suite which covers adding items to cart, removing and calculating total order info
 - [Add item to cart](https://github.com/NataliMigunova/SkillFactory_Final_project/blob/master/Test_cart_functionality.py#L16)
   test adds an item to the cart, then checks that number of elements in the cart changed to 1 and checked that overall order amount is equal to item price
